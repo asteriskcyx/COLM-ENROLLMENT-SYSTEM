@@ -62,6 +62,8 @@
     <Import Include="System.Collections" />
     <Import Include="System.Collections.Generic" />
     <Import Include="System.Data" />
+    <Import Include="System.Data.Sql" />
+    <Import Include="System.Data.SqlClient" />
     <Import Include="System.Drawing" />
     <Import Include="System.Diagnostics" />
     <Import Include="System.Windows.Forms" />
@@ -92,6 +94,18 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Program_Connection.vb" />
+    <Compile Include="Students\frm_students_entry.Designer.vb">
+      <DependentUpon>frm_students_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Students\frm_students_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students\Student_Lists.designer.vb">
+      <DependentUpon>Student_Lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Students\Student_Lists.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frm_main.resx">
@@ -102,6 +116,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\frm_students_entry.resx">
+      <DependentUpon>frm_students_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\Student_Lists.resx">
+      <DependentUpon>Student_Lists.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -52,6 +52,7 @@ Partial Class frm_main
         Me.lblDateTime = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel_Main = New System.Windows.Forms.Panel()
+        Me.Student_Lists1 = New COLM_ENROLLMENT_SYSTEM.Student_Lists()
         Me.Panel_Top.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -60,6 +61,7 @@ Partial Class frm_main
         Me.TabPage4.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel_Bot.SuspendLayout()
+        Me.Panel_Main.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel_Top
@@ -70,7 +72,7 @@ Partial Class frm_main
         Me.Panel_Top.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel_Top.Location = New System.Drawing.Point(0, 0)
         Me.Panel_Top.Name = "Panel_Top"
-        Me.Panel_Top.Size = New System.Drawing.Size(1165, 167)
+        Me.Panel_Top.Size = New System.Drawing.Size(1165, 151)
         Me.Panel_Top.TabIndex = 1
         '
         'TabControl1
@@ -85,7 +87,7 @@ Partial Class frm_main
         Me.TabControl1.Location = New System.Drawing.Point(0, 48)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1165, 113)
+        Me.TabControl1.Size = New System.Drawing.Size(1165, 98)
         Me.TabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed
         Me.TabControl1.TabIndex = 1
         '
@@ -96,7 +98,7 @@ Partial Class frm_main
         Me.TabPage1.Location = New System.Drawing.Point(4, 34)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1157, 75)
+        Me.TabPage1.Size = New System.Drawing.Size(1157, 60)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "STUDENTS"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -110,7 +112,7 @@ Partial Class frm_main
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button2.Location = New System.Drawing.Point(99, 3)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(96, 69)
+        Me.Button2.Size = New System.Drawing.Size(96, 54)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "DETAILS"
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -125,7 +127,7 @@ Partial Class frm_main
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button1.Location = New System.Drawing.Point(3, 3)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(96, 69)
+        Me.Button1.Size = New System.Drawing.Size(96, 54)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "LISTS"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -465,11 +467,21 @@ Partial Class frm_main
         '
         'Panel_Main
         '
+        Me.Panel_Main.Controls.Add(Me.Student_Lists1)
         Me.Panel_Main.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel_Main.Location = New System.Drawing.Point(0, 167)
+        Me.Panel_Main.Location = New System.Drawing.Point(0, 151)
         Me.Panel_Main.Name = "Panel_Main"
-        Me.Panel_Main.Size = New System.Drawing.Size(1165, 337)
+        Me.Panel_Main.Size = New System.Drawing.Size(1165, 353)
         Me.Panel_Main.TabIndex = 3
+        '
+        'Student_Lists1
+        '
+        Me.Student_Lists1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Student_Lists1.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Student_Lists1.Location = New System.Drawing.Point(0, 0)
+        Me.Student_Lists1.Name = "Student_Lists1"
+        Me.Student_Lists1.Size = New System.Drawing.Size(1165, 353)
+        Me.Student_Lists1.TabIndex = 0
         '
         'frm_main
         '
@@ -491,6 +503,7 @@ Partial Class frm_main
         Me.TabPage4.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel_Bot.ResumeLayout(False)
+        Me.Panel_Main.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -524,4 +537,5 @@ Partial Class frm_main
     Friend WithEvents Button15 As System.Windows.Forms.Button
     Friend WithEvents Button14 As System.Windows.Forms.Button
     Friend WithEvents Button13 As System.Windows.Forms.Button
+    Friend WithEvents Student_Lists1 As COLM_ENROLLMENT_SYSTEM.Student_Lists
 End Class

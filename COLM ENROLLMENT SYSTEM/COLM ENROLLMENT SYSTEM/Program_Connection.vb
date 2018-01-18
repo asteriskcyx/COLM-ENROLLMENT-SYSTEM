@@ -1,6 +1,6 @@
 ﻿Module Program_Connection
 
-    Public StringConnection As String = "Server=COLM\SQLEXPRESS;Database=PROGRAM_TEST_2;User Id=sa;Password=sa;" '"Data Source=COLM\SQLEXPRESS;Initial Catalog=PROGRAM_TEST_2;Integrated Security=True" '= LoadConnection() '"Data Source=CYX-PC\SQLEXPRESS;Initial Catalog=PROJECT_COLM;Integrated Security=True"
+    Public StringConnection As String = "Data Source=COLM\SQLEXPRESS;Initial Catalog=PROGRAM_TEST_2;Integrated Security=True" '= LoadConnection() '"Data Source=CYX-PC\SQLEXPRESS;Initial Catalog=PROJECT_COLM;Integrated Security=True"
     'Public StringConnection As String = "Data Source=CYREKXS-PC\SQLEXPRESS;Initial Catalog=PROGRAM_TEST_2;Integrated Security=True"
     Private Function LoadConnection()
 
