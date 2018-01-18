@@ -94,6 +94,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Program_Connection.vb" />
+    <Compile Include="SQL Commands and Functions\SQL Functions.vb" />
     <Compile Include="Students\frm_students_entry.Designer.vb">
       <DependentUpon>frm_students_entry.vb</DependentUpon>
     </Compile>
