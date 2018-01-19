@@ -1,7 +1,8 @@
 ﻿Module Program_Connection
 
-    Public StringConnection As String = "Data Source=COLM\SQLEXPRESS;Initial Catalog=PROGRAM_TEST_2;Integrated Security=True" '= LoadConnection() '"Data Source=CYX-PC\SQLEXPRESS;Initial Catalog=PROJECT_COLM;Integrated Security=True"
+    'Public StringConnection As String = "Data Source=COLM\SQLEXPRESS;Initial Catalog=PROGRAM_TEST_2;Integrated Security=True" '= LoadConnection() '"Data Source=CYX-PC\SQLEXPRESS;Initial Catalog=PROJECT_COLM;Integrated Security=True"
     'Public StringConnection As String = "Data Source=CYREKXS-PC\SQLEXPRESS;Initial Catalog=PROGRAM_TEST_2;Integrated Security=True"
+    Public StringConnection As String = "Data Source=COLM\SQLEXPRESS;Initial Catalog=DB_COLM_SYSTEM;Integrated Security=True"
     Private Function LoadConnection()
 
         If StringConnection <> String.Empty Then
